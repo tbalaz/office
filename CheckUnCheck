@@ -1,0 +1,15 @@
+Sub CheckAllCheckboxes()
+For Each c In ActiveDocument.FormFields
+    If c.Type = wdFieldFormCheckBox Then
+            c.CheckBox.Value = True
+    End If
+    Next c
+End Sub
+
+Sub UnCheckAllCheckboxes()
+For Each c In ActiveDocument.FormFields
+    If c.Type = wdFieldFormCheckBox Then
+            f.CheckBox.Value = False
+    End If
+    Next c
+End Sub
